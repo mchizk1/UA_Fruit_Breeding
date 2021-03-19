@@ -6,7 +6,7 @@
 
 ### Miscellaneous R
 * [BaRcode.R]() - Creates barcoded stickers for labeling samples
-* [HaRmonic.R]() - Quickly calculates harmonic means for entry mean heritability calculations
-* [PedigRee.R]() - Assembles pedigrees for any genotype from preformatted historic UA crossing data
+* [HaRmonic.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/HaRmonic.R) - Quickly calculates harmonic means for entry mean heritability calculations
+* [PedigRee.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/PedigRee.R) - Assembles pedigrees for any genotype from preformatted historic UA crossing data
 
 ### Miscellaneous SAS
