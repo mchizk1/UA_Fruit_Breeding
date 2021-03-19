@@ -1,7 +1,7 @@
 ## UA_Fruit_Breeding
 
 ### Blackberry GWAS
-* [filterVCF.R]() - This is a generic stript for filtering the 8.7 Gb VCF file from RAPiD Genomics
+* [filterVCF.R]() - This is a generic script for filtering the 8.7 Gb VCF file from RAPiD Genomics
 * [dogify.R]() - Formatting VCF data for updog and making tetraploid SNP calls
 
 ### Miscellaneous R
