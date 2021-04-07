@@ -1,24 +1,23 @@
-
+sink("/dev/null")
 library(tidyverse)
 library(VariantAnnotation)
 library(updog)
 
 # This points to the vcf file with only AR samples
-smallvcfpath <- "E:/UA/GWAS/VCF/smallVCF.vcf"
+smallvcfpath <- "/home/tmchizk/smallVCF.vcf"
 
 # Grabbing only the VCF data that updog needs which includes:
 # read depth (DP), reference allele counts (RO), SNP names, and Sample names
-param <- ScanVcfParam(info=NA, geno = c("DP", "RO", "GT"))
+param <- ScanVcfParam(info=NA, geno = c("DP", "RO"))
 VCF <- scanVcf(smallvcfpath, param = param)
 
 # Parsing the data that was scanned from the VCF file into updog format
 ## Read depth
-DP <- as.data.frame(VCF$`*:*-*`$GENO$DP)[1:7,]
+DP <- as.data.frame(VCF$`*:*-*`$GENO$DP)[1:1050,]
 ## Reference allele count
-RO <- as.data.frame(VCF$`*:*-*`$GENO$RO)[1:7,]
-
+RO <- as.data.frame(VCF$`*:*-*`$GENO$RO)[1:1050,]
 ## SNP deduplication and rownames
-SNPs <- names(ranges(VCF$`*:*-*`$rowRanges))[1:7]
+SNPs <- names(ranges(VCF$`*:*-*`$rowRanges))[1:1050]
 
 DP <- cbind(SNPs, DP) %>% unique()
 rownames(DP) <- NULL
@@ -29,17 +28,17 @@ rownames(RO) <- NULL
 RO <- column_to_rownames(RO, var="SNPs") %>% as.matrix()
 
 # Running tetraploid SNP calls in multidog
-#tetrasnp <- multidog(refmat = RO, sizemat = DP, ploidy = 4)
+# tetrasnp <- multidog(refmat = RO, sizemat = DP, ploidy = 4)
 
 
-# small 3 SNP test version
-smallDP <- DP[1:6,]
-smallRO <- RO[1:6,]
+# small 100 SNP test version
+#smallDP <- DP[1:10000,]
+#smallRO <- RO[1:10000,]
+# starttime <- as.numeric(Sys.time())
+# tetrasnp <- multidog(refmat = smallRO, sizemat = smallDP, ploidy = 4, nc = 32)
+# endtime <- as.numeric(Sys.time())
+# runtimedays <- ((endtime-starttime)/(100*60*60*24))*125000
 
-tetrasnp <- multidog(refmat = RO, sizemat = DP, ploidy = 4, nc=4)
-tetrasnp$inddf
-
-# This is a helper function to replace numeric updog calls with character GWASpoly calls
 DogToPoly <- function(call, ref_allele, alt_allele){
   call = as.character(call) %>%
     replace_na("unknown")
@@ -84,12 +83,13 @@ CallThemSNPS <- function(DP, RO, ploidy, nc, batch){
     Polyfied <- rbind(Polyfied, batch_poly)
     i=i+increment
     # This conditional handles situations where the final batch exceeds the entries remaining
-    if (i >= length(rownames(DP))){
+    if (i+increment >= length(rownames(DP))){
       batch = i-length(rownames(DP))+1
     }
   }
   return(Polyfied)
 }
 
-Polyfied <- CallThemSNPS(DP, RO, ploidy = 4, nc = 4, batch = 2)
-?separate
+Polyfied <- CallThemSNPS(DP, RO, ploidy = 4, nc = 32, batch = 100)
+sink()
+write.csv(Polyfied)
