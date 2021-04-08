@@ -35,7 +35,7 @@
 **Inputs:** 
 
 * Uncompressed VCF file
-* SLURM job file (Optional. For running on AHPCC pinnacle)
+* [SLURM job file](https://github.com/mchizk1/UA_Fruit_Breeding/edit/main/Blackberry%20GWAS/updog_job.slurm) (Optional. For running on AHPCC pinnacle)
 
 **Output:**
 
