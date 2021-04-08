@@ -1,5 +1,5 @@
 
-## **Call Them SNPs!!!**
+## **UA Blackberry GWAS Project**
 
 ### **Step 1. Filtering original VCF data in [readVCF_ARonly.R]()**
 
