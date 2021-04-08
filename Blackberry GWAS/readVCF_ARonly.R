@@ -1,4 +1,3 @@
-rm(list=ls())
 # Installing/loading VariantAnnotation package
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")

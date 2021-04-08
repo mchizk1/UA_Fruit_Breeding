@@ -13,11 +13,11 @@ VCF <- scanVcf(smallvcfpath, param = param)
 
 # Parsing the data that was scanned from the VCF file into updog format
 ## Read depth
-DP <- as.data.frame(VCF$`*:*-*`$GENO$DP)[1:1050,]
+DP <- as.data.frame(VCF$`*:*-*`$GENO$DP)
 ## Reference allele count
-RO <- as.data.frame(VCF$`*:*-*`$GENO$RO)[1:1050,]
+RO <- as.data.frame(VCF$`*:*-*`$GENO$RO)
 ## SNP deduplication and rownames
-SNPs <- names(ranges(VCF$`*:*-*`$rowRanges))[1:1050]
+SNPs <- names(ranges(VCF$`*:*-*`$rowRanges))
 
 DP <- cbind(SNPs, DP) %>% unique()
 rownames(DP) <- NULL
@@ -90,6 +90,6 @@ CallThemSNPS <- function(DP, RO, ploidy, nc, batch){
   return(Polyfied)
 }
 
-Polyfied <- CallThemSNPS(DP, RO, ploidy = 4, nc = 32, batch = 100)
+Polyfied <- CallThemSNPS(DP, RO, ploidy = 4, nc = 32, batch = 1000)
 sink()
 write.csv(Polyfied)
