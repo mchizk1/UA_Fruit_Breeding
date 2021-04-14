@@ -10,3 +10,4 @@
 * [PedigRee.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/PedigRee.R) - Assembles pedigrees for any genotype from preformatted historic UA crossing data
 
 ### Miscellaneous SAS
+* [BLUPs.sas](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/BLUPs.sas) - Estimating Best Linear Unbiased Predictions (BLUPs) in SAS for phenotypic GWAS data
