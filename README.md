@@ -11,3 +11,4 @@
 
 ### Miscellaneous SAS
 * [BLUPs.sas](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/BLUPs.sas) - Estimating Best Linear Unbiased Predictions (BLUPs) in SAS for phenotypic GWAS data
+* [MultiMixed.sas](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/MultiMixed.sas) - A Handy SAS macro for running PROC MIXED over multiple traits with fewer lines of code
