@@ -1,5 +1,3 @@
-install.packages("raster")
-install.packages("pdftools")
 library(pdftools)
 library(raster)
 library(qrcode)
@@ -106,4 +104,4 @@ AllLists <- function(inDir, outDir){
   close(pb)
 }
 
-AllLists("C:/Users/Mason/Box Sync/FieldbookMaps/", "C:/Users/Mason/Desktop/work/")
+AllLists("C:/Where_ever_your_map_lists_are...", "C:/Wherever_you_want_your_new_files")
