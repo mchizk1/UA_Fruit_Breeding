@@ -8,6 +8,7 @@
 * [BaRcode.R]() - Creates barcoded stickers for labeling samples
 * [haRmonic.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/haRmonic.R) - Quickly calculates harmonic means for entry mean heritability calculations
 * [PedigRee.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/PedigRee.R) - Assembles pedigrees for any genotype from preformatted historic UA crossing data
+* [QRlist.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/QRlist.R) - Generates a list of QR codes for the Fieldbook App with additional descriptive plot info
 
 ### Miscellaneous SAS
 * [BLUPs.sas](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/BLUPs.sas) - Estimating Best Linear Unbiased Predictions (BLUPs) in SAS for phenotypic GWAS data
