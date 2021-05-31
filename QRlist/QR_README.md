@@ -45,9 +45,3 @@ that meet the requirements of `FullListPDF()`.
 * `outDir` -- A character string describing the path to the directory that output PDF files should
 be saved to.  The output directory may either be a new folder or one that already exists.
 
-### Example Output:
-
-![QRexample]("https://github.com/mchizk1/UAR_Fruit_Breeding/blob/main/QRlist/QRpic.jpg")
-
-<img src="https://github.com/mchizk1/UAR_Fruit_Breeding/blob/main/QRlist/QRpic.jpg" width="100" height="100">
-
