@@ -47,5 +47,5 @@ be saved to.  The output directory may either be a new folder or one that alread
 
 ### Example Output:
 
-![QRexample]("https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/QRlist/QRpic.jpg")
+![QRexample]("QRpic.jpg")
 
