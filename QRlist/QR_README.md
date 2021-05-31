@@ -49,3 +49,5 @@ be saved to.  The output directory may either be a new folder or one that alread
 
 ![QRexample]("https://github.com/mchizk1/UAR_Fruit_Breeding/blob/main/QRlist/QRpic.jpg")
 
+<img src="https://github.com/mchizk1/UAR_Fruit_Breeding/blob/main/QRlist/QRpic.jpg" width="100" height="100">
+
