@@ -1,11 +1,4 @@
----
-title: "QRlist.R Tutorial"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+## **QR List Functions**
 
 ## Two Main Functions (not including helper functions)
 
@@ -54,5 +47,5 @@ be saved to.  The output directory may either be a new folder or one that alread
 
 ### Example Output:
 
-![QRexample]("https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/QRlist/QRpic.png")
+![QRexample]("https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/QRlist/QRpic.jpg")
 
