@@ -32,16 +32,16 @@ plotQR <- function(rownum, plotnum, plotid, stakeid, qrcoord, labcoord){
 FillPage <- function(field_df, start){
   entry <- start
   for(i in 0:9){
-    plotQR(field_df$Row[entry], field_df$Plot[entry], field_df$X2021.Fieldbook.ID[entry], 
-           field_df$Spreadsheet.Map.Name[entry], c(0,2,9-i,10-i)/10, c(2,5,9-i,10-i)/10)
+    plotQR(field_df$Row[entry], field_df$Plot[entry], field_df$Plot_ID[entry], 
+           field_df$Stake_ID[entry], c(0,2,9-i,10-i)/10, c(2,5,9-i,10-i)/10)
     entry=entry+1
     if(entry >= length(rownames(field_df))){
       break
     }
   }
   for(j in 0:9){
-    plotQR(field_df$Row[entry], field_df$Plot[entry], field_df$X2021.Fieldbook.ID[entry], 
-           field_df$Spreadsheet.Map.Name[entry], c(5,7,9-j,10-j)/10, c(7,10,9-j,10-j)/10)
+    plotQR(field_df$Row[entry], field_df$Plot[entry], field_df$Plot_ID[entry], 
+           field_df$Stake_ID[entry], c(5,7,9-j,10-j)/10, c(7,10,9-j,10-j)/10)
     entry=entry+1
     if(entry >= length(rownames(field_df))){
       break
@@ -95,7 +95,7 @@ dircheck <- function(dircheck){
 AllLists <- function(inDir, outDir){
   dircheck(outDir)
   fileQueue <- list.files(inDir)
-  fileNames <- str_extract(exlist, "[:print:]+(?=.csv)")
+  fileNames <- str_extract(fileQueue, "[:print:]+(?=.csv)")
   pb <- tkProgressBar("Generating QR code lists...", paste("0 of",length(fileQueue),"PDFs created"), 0, length(fileQueue), 50)
   for(i in 1:length(fileQueue)){
     FullListPDF(paste0(inDir,fileQueue[i]), paste0(outDir,fileNames[i],".pdf"))
