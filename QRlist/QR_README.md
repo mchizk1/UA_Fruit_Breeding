@@ -1,4 +1,4 @@
-## **QR List Functions**
+## **[QR List Functions](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/QRlist/QRlist.R)**
 
 ## Two Main Functions (not including helper functions)
 
@@ -45,7 +45,12 @@ that meet the requirements of `FullListPDF()`.
 * `outDir` -- A character string describing the path to the directory that output PDF files should
 be saved to.  The output directory may either be a new folder or one that already exists.
 
+<<<<<<< HEAD
 ### Example Output:
 
 ![QR example]("https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/QRlist/QRpic.jpg")
+=======
+### Example Output PDF Page:
+>>>>>>> 00b1301db7debd7c4863a1181d092692e5470283
 
+![QRexample](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/QRlist/QRpic.jpg)
