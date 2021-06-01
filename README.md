@@ -14,3 +14,6 @@
 ### Miscellaneous SAS
 * [BLUPs.sas](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/BLUPs.sas) - Estimating Best Linear Unbiased Predictions (BLUPs) in SAS for phenotypic GWAS data
 * [MultiMixed.sas](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/MultiMixed.sas) - A handy SAS macro for running PROC MIXED over multiple traits with fewer lines of code
+
+### Other Scripts
+* [Vibration_Table.ino](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/Vibration_Table.ino) - This is an Arduino script used to estimate frequency and displacement from tachometer and accelerometer data. A big thanks to Randy Andress in Biological and Agricultural Engineering for writing this for us.
