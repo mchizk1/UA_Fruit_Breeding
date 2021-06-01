@@ -1,6 +1,6 @@
 library(pdftools)
 library(raster)
-library(qrcode)
+library(qrencoder)
 library(stringr)
 library(tidyr)
 library(tcltk)
@@ -10,7 +10,7 @@ library(tcltk)
 # and StakeID
 
 plotQR <- function(rownum, plotnum, plotid, stakeid, qrcoord, labcoord){
-  QRmat <- qrcode_gen(plotid, dataOutput = T, plotQRcode = F)
+  QRmat <- qrencode(plotid)
   QRras <- raster(QRmat)
   par(mfrow=c(1,1))
   par(mar=c(0.5,0,0,0))
@@ -33,7 +33,7 @@ FillPage <- function(field_df, start){
   entry <- start
   for(i in 0:9){
     plotQR(field_df$Row[entry], field_df$Plot[entry], field_df$Plot_ID[entry], 
-           field_df$Stake_ID[entry], c(0,2,9-i,10-i)/10, c(2,5,9-i,10-i)/10)
+           field_df$Stake_ID[entry], c(0,2,9.5-i,10-i)/10, c(2,5,9.2-i,10-i)/10)
     entry=entry+1
     if(entry >= length(rownames(field_df))){
       break
@@ -41,7 +41,7 @@ FillPage <- function(field_df, start){
   }
   for(j in 0:9){
     plotQR(field_df$Row[entry], field_df$Plot[entry], field_df$Plot_ID[entry], 
-           field_df$Stake_ID[entry], c(5,7,9-j,10-j)/10, c(7,10,9-j,10-j)/10)
+           field_df$Stake_ID[entry], c(5,7,9.5-j,10-j)/10, c(7,10,9.2-j,10-j)/10)
     entry=entry+1
     if(entry >= length(rownames(field_df))){
       break
@@ -104,4 +104,4 @@ AllLists <- function(inDir, outDir){
   close(pb)
 }
 
-AllLists("C:/Where_ever_your_map_lists_are...", "C:/Wherever_you_want_your_new_files")
+AllLists("C:/Users/Mason/Box Sync/FieldbookMaps/", "C:/Users/Mason/Desktop/BlackberryLists/")

@@ -47,4 +47,4 @@ be saved to.  The output directory may either be a new folder or one that alread
 
 ### Example Output PDF Page:
 
-![QRexample](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/QRlist/QRpic.jpg)
+![QRexample](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/QRlist/QRpic.png)
