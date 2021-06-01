@@ -17,7 +17,7 @@ files, and stitching them together into a single multi-page output pdf using the
 **Arguments:**
 
 * `listin` -- A csv with four required columns named "Row", "Plot", "Plot_ID", and "Stake_ID".  "Plot_ID" will be used to generate the QR code and the rest will be included as descriptive 
-information in each label. See [example](https://github/mchizk1/UA_Fruit_Breeding/blob/main/QRlist/) csv input file.
+information in each label. See [example](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/QRlist/example.csv) csv input file.
 
 * `listout` -- A character string describing the file location, name, and extension of the new
 QR code list to be created
