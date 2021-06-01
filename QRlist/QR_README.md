@@ -23,7 +23,7 @@ information in each label. See [example](https://github/mchizk1/UA_Fruit_Breedin
 QR code list to be created
 
 
-### 2. AllLists()
+### 2. AllLists
 
 **Description:**
 
