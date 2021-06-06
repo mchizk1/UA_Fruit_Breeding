@@ -1,7 +1,7 @@
 
 ## **UA Blackberry GWAS Project**
 
-### **Step 1. Filtering original VCF data in [readVCF_ARonly.R]()**
+### **Step 1. Filtering original VCF data in [readVCF_ARonly.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/Blackberry%20GWAS/readVCF_ARonly.R)**
 
 **Description:** Because not all samples in the ARK_133901 GWAS panel are tetraploid, it is necessary to remove the higher ploidy Oregon materials and then remove entries that no longer contain variants.  This R script hard codes the location of a local [text file]() containing the sample IDs of samples that we wish to include.  All others are removed.  This script processed a 125,000 SNP x 495 sample vcf in about 15 minutes on a normal laptop.
 
@@ -20,7 +20,7 @@
 
 * An uncompressed, filtered vcf file containing only the desired samples with non-variants removed
 
-### **Step 2. Tetraploid SNP calls and GWASpoly formatting in [Dogify.R]()**
+### **Step 2. Tetraploid SNP calls and GWASpoly formatting in [Dogify.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/Blackberry%20GWAS/Dogify.R)**
 
 **Description:** This script makes tetraploid SNP calls using the `multidog()` function in the [updog]("https://github.com/dcgerard/updog") package, which supports parallel computing. This script runs multidog incrementally over a user-assigned number of SNPS to avoid memory exhaustion.  Then, the estimated SNP allele dosage calls in the 'inddf' data frame are reformatted for [GWASpoly]("https://github.com/jendelman/GWASpoly").  This script will take a while and should be run on a high performance computing system if available. 
 
