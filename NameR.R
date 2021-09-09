@@ -7,7 +7,7 @@ StandardName <- function(names) {
   cultivars <- c("COMANCHE", "CHEROKEE", "CHEYENNE", "SHAWNEE", "CHOCTAW",
                  "NAVAHO", "KIOWA", "ARAPAHO", "CHICKASAW", "APACHE",
                  "OUACHITA", "NATCHEZ", "STELLA", "OSAGE", "PRIME-JAN",
-                 "PRIME-JIM", "PA_45", "BLACK MAGIC","SHARON'S_DELIGHT", "PA_FREEDOM",
+                 "PRIME-JIM", "PA_45", "BLACK_MAGIC","SHARON'S_DELIGHT", "PA_FREEDOM",
                  "PA_TRAVELER", "BABY_CAKES", "CADDO", "PONCA", "PA_HORIZON",
                  "BLACK_GEM")
   selections <- c("A-527", "A-531", "A-544", "A-730", "A-876",
