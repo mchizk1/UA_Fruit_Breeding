@@ -25,9 +25,9 @@ StandardName <- function(names) {
     toupper() %>%
     # Now for some regex replacements
     # If A-____ or APF-___
-    str_replace("(?<=(^A|^APF))_?(?=[:digit:]{1,4}.*)", "-") %>%
+    str_replace("(?<=(^A|^APF|^PBB_APF))(_|-|[:blank:])*(?=([:digit:]{1,4}|PBB).*)", "-") %>%
     # Replace all spaces with underscores
-    str_replace(" ", "_") %>%
+    str_replace_all("[:blank:]+", "_") %>%
     # Replace Prime-Ark with PA
     str_replace("^PRIME(-|_?)ARK(?=.*)", "PA") %>%
     # Replace Sweet-Ark with SA
@@ -37,7 +37,9 @@ StandardName <- function(names) {
     # Replace alternate spelling of traveler
     str_replace("PA_TRAVELLER", "PA_TRAVELER") %>%
     # Remove leading zeros in low number selections
-    str_remove("(?<=^A-|^APF-)0*(?=.*)")
+    str_remove("(?<=^A-|^APF-)0*(?=.*)") %>%
+    # Remove extra spaces
+    str_remove("(?<=_)_+")
   
   new_names <- c()
   for(i in 1:length(StdNms)){
