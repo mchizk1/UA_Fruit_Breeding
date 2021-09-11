@@ -10,7 +10,7 @@
 * [PedigRee.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/R_Misc/PedigRee.R) - Assembles pedigrees for any genotype from preformatted historic UA crossing data
 * [QRlist.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/R_Misc/QRlist/QR_README.md) - Generates a list of QR codes for the Fieldbook App with additional descriptive plot info
 * [NameR.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/R_Misc/NameR.R) - Standardizes messy blackberry genotype names using regex
-* [Vlookup.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob.main/R_Misc/Vlookup.R) - Imitates Excel's vlookup function for name replacements
+* [Vlookup.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/R_Misc/Vlookup.R) - Imitates Excel's vlookup function for name replacements
 
 ### Miscellaneous SAS
 * [BLUPs.sas](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/BLUPs.sas) - Estimating Best Linear Unbiased Predictions (BLUPs) in SAS for phenotypic GWAS data
