@@ -1,6 +1,6 @@
 library(tidyverse)
 
-test <- c("Apf_123T", "a2526TC", "prime_ark freedom", "Navajo (wrong spelling)", "a876", "APF-008", "APF-010")
+#test <- c("Apf_123T", "a2526TC", "prime_ark freedom", "Navajo (wrong spelling)", "a876", "APF-008", "APF-010")
 
 StandardName <- function(names) {
   # Hard coded names of UA releases and selection numbers
@@ -52,4 +52,4 @@ StandardName <- function(names) {
   return(new_names)
 }
 
-StandardName(test)
+#StandardName(test)
