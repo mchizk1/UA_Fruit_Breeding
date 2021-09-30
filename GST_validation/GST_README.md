@@ -32,11 +32,11 @@ like the one shown below (Fry), as much as 30% of raw reads were dropped.
 
 **PRE-trim fastqc quality report**
 
-![pretrim](https://github.com/mchizk1/UA_Fruit_Breeding/GST_validation/Fry_pretrim.png)
+![pretrim](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/GST_validation/Fry_pretrim.png)
 
 **PRE-trim fastqc quality report**
 
-![pretrim](https://github.com/mchizk1/UA_Fruit_Breeding/GST_validation/Fry_posttrim.png)
+![pretrim](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/GST_validation/Fry_posttrim.png)
     
 ## Step 2: Alignments with BWA MEM
 
