@@ -53,6 +53,10 @@ the following settings:
 Using this method, we achieved around 70-90% genome coverage per haplotype with around 3-6x 
 mean read depth per haplotype depending on the quality of the individual sample.
 
+**Sample of Coverage Histogram for Carlos hap1 alignment**
+
+![coverage](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/GST_validation/Carlos_coverage.png)
+
 ## Step 3: Post Alignment Formatting and Cleanup in SAMtools
 
 Resulting SAM files were converted to BAM format, sorted, scored for quality, 
