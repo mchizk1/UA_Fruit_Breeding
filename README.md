@@ -5,6 +5,9 @@
 * [readVCF_ARonly.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/Blackberry%20GWAS/readVCF_ARonly.R) - This is a script for filtering the 8.7 Gb VCF file from RAPiD Genomics
 * [Dogify.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/Blackberry%20GWAS/Dogify.R) - Making tetraploid incremental SNP calls in updog and formatting for GWASpoly.
 
+### GST4 Muscadine Validation Project
+* See the [markdown](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/GST_validation/GST_README.md) for documentation.
+
 ### Miscellaneous R
 * [QRlist.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/R_Misc/QRlist/QR_README.md) - Generates a list of QR codes for the Fieldbook App with additional descriptive plot info
 
