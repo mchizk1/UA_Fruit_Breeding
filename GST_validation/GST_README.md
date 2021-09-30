@@ -49,6 +49,9 @@ Next, each genotype was aligned to the indexed reference genome using BWA MEM on
 the following settings:
 
     bwa mem -t 32 [reference.fasta] [forward.fastq] [reverse.fastq] > output_alignment.sam
+    
+Using this method, we achieved around 70-80% genome coverage per haplotype with around 3-6x 
+mean read depth per haplotype depending on the quality of the individual sample.
 
 ## Step 3: Post Alignment Formatting and Cleanup in SAMtools
 
