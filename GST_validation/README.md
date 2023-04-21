@@ -77,9 +77,17 @@ and deduplicated using samtools:
     # Deduplication and indexing
     samtools markdup -@ 32 -r -s --write-index [sample.resort.bam] [sample.ddp.bam]
     
-    # Chromosome 4 alignments were extracted from each sample to reduce the size 
-    # of the final BAM archive
-    samtools view -@ 32 -b --write-index -o [sample.ch4.bam] [sample.ddp.bam] \
-    VITMroTrayshed_v2.0.hap1.chr04:1-23196716
+## Step 4: Cendidate Gene Extraction and Variant Calling in BCFtools
+
+Using deduplicated BAM files, variants were called only for the VrGST4, VrGST12, and VrMyb1A
+candidate regions.  The final VCF was subsequently formatted in R using the VariantAnnotation
+package.
+
+    # Variant calling for candidate regions
+    bcftools mpileup --threads 32 -f [reference.fasta] -b genolist.txt \
+    -R regions.txt -o GST_candidates.vcf -O 'z'
+    
+    bcftools call [cadidates.vcf.gz] --threads 32 -c -o GST_calls.vcf.gz -O 'z'
+
 
 
