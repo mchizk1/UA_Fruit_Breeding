@@ -10,6 +10,7 @@
 
 ### Miscellaneous R
 * [QRlist.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/R_Misc/QRlist/QR_README.md) - Generates a list of QR codes for the Fieldbook App with additional descriptive plot info
+* [BLUP.R](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/R_Misc/BLUP.R) - Estimating Best Linear Unbiased Predictions (BLUPs) in R using lme4 for phenotypic GWAS data
 
 ### Miscellaneous SAS
 * [BLUPs.sas](https://github.com/mchizk1/UA_Fruit_Breeding/blob/main/BLUPs.sas) - Estimating Best Linear Unbiased Predictions (BLUPs) in SAS for phenotypic GWAS data
